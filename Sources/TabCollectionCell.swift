@@ -47,7 +47,7 @@ class TabCollectionCell: UICollectionViewCell {
     }
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        if item.characters.count == 0 {
+        if item.count == 0 {
             return CGSize.zero
         }
 
@@ -85,12 +85,22 @@ extension TabCollectionCell {
 
     func highlightTitle() {
         itemLabel.textColor = option.currentColor
-        itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
+		
+		guard let font = option.font else {
+			itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
+			return
+		}
+        itemLabel.font = UIFont(name: font.fontName, size: option.fontSize)
     }
 
     func unHighlightTitle() {
         itemLabel.textColor = option.defaultColor
-        itemLabel.font = UIFont.systemFont(ofSize: option.fontSize)
+		
+		guard let font = option.font else {
+			itemLabel.font = UIFont.systemFont(ofSize: option.fontSize)
+			return
+		}
+		itemLabel.font = UIFont(name: font.fontName, size: option.fontSize)
     }
 }
 
