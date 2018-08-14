@@ -86,11 +86,11 @@ extension TabCollectionCell {
     func highlightTitle() {
         itemLabel.textColor = option.currentColor
 		
-		guard let font = option.font else {
+		guard let font = option.selectedFont else {
 			itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
 			return
 		}
-        itemLabel.font = UIFont(name: font.fontName, size: option.fontSize)
+        itemLabel.font = UIFont(name: font.fontName, size: font.pointSize)
     }
 
     func unHighlightTitle() {
@@ -100,7 +100,7 @@ extension TabCollectionCell {
 			itemLabel.font = UIFont.systemFont(ofSize: option.fontSize)
 			return
 		}
-		itemLabel.font = UIFont(name: font.fontName, size: option.fontSize)
+		itemLabel.font = UIFont(name: font.fontName, size: font.pointSize)
     }
 }
 
