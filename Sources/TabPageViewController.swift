@@ -32,6 +32,8 @@ open class TabPageViewController: UIPageViewController {
     fileprivate var statusViewHeightConstraint: NSLayoutConstraint?
     fileprivate var tabBarTopConstraint: NSLayoutConstraint?
 
+	public var direction: UIPageViewControllerNavigationDirection?
+	
     public init() {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
@@ -43,7 +45,7 @@ open class TabPageViewController: UIPageViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        setupPageViewController()
+        setupPageViewController(direction: direction)
         setupScrollView()
 //        updateNavigationBar()
     }
@@ -107,7 +109,7 @@ public extension TabPageViewController {
 
 extension TabPageViewController {
 
-    fileprivate func setupPageViewController() {
+	fileprivate func setupPageViewController(direction: UIPageViewControllerNavigationDirection? = .forward) {
         dataSource = self
         delegate = self
         automaticallyAdjustsScrollViewInsets = false
