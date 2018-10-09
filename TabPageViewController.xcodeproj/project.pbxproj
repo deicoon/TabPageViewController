@@ -19,7 +19,7 @@
 		F082FDBA216CFD610056A4A7 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB4216CFD600056A4A7 /* TabCollectionCell.swift */; };
 		F082FDBB216CFD610056A4A7 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F082FDB5216CFD600056A4A7 /* TabView.xib */; };
 		F082FDBC216CFD610056A4A7 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB6216CFD600056A4A7 /* TabView.swift */; };
-		F082FDBD216CFD610056A4A7 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB7216CFD600056A4A7 /* TabPageViewController.swift */; };
+		F082FDBE216D05450056A4A7 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB7216CFD600056A4A7 /* TabPageViewController.swift */; };
 		F8CE39F71F35AE3A00CF74BA /* LimitedTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE39F61F35AE3A00CF74BA /* LimitedTabPageViewController.swift */; };
 		F8CE39F91F35AE6500CF74BA /* InfiniteTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE39F81F35AE6500CF74BA /* InfiniteTabPageViewController.swift */; };
 		OBJ_28 /* TabPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* TabPageViewControllerTests.swift */; };
@@ -335,7 +335,7 @@
 			buildActionMask = 0;
 			files = (
 				F082FDB9216CFD600056A4A7 /* TabPageOption.swift in Sources */,
-				F082FDBD216CFD610056A4A7 /* TabPageViewController.swift in Sources */,
+				F082FDBE216D05450056A4A7 /* TabPageViewController.swift in Sources */,
 				F082FDBC216CFD610056A4A7 /* TabView.swift in Sources */,
 				F082FDBA216CFD610056A4A7 /* TabCollectionCell.swift in Sources */,
 			);
