@@ -10,12 +10,13 @@ import UIKit
 
 class TabCollectionCell: UICollectionViewCell {
 
-    var tabItemButtonPressedBlock: ((Void) -> Void)?
+    var tabItemButtonPressedBlock: (() -> Void)?
     var option: TabPageOption = TabPageOption() {
         didSet {
             currentBarViewHeightConstraint.constant = option.currentBarHeight
         }
     }
+    
     var item: String = "" {
         didSet {
             itemLabel.text = item
@@ -23,6 +24,38 @@ class TabCollectionCell: UICollectionViewCell {
             invalidateIntrinsicContentSize()
         }
     }
+    
+    var subItem: String = "" {
+        didSet {
+            subItemTitle.text = subItem
+            if subItem.count > 0{
+                tabSubItem.isHidden = false
+                titleCenterY.constant = -10
+                subItemHeight.constant = 15
+            }
+            else{
+                tabSubItem.isHidden = true
+                titleCenterY.constant = 0
+                subItemHeight.constant = 0
+            }
+        }
+    }
+    
+    var showSubItem : Bool = false{
+        didSet {
+            if showSubItem{
+                tabSubItem.isHidden = false
+                titleCenterY.constant = -10
+                subItemHeight.constant = 15
+            }
+            else{
+                tabSubItem.isHidden = true
+                titleCenterY.constant = 0
+                subItemHeight.constant = 0
+            }
+        }
+    }
+    
     var isCurrent: Bool = false {
         didSet {
             currentBarView.isHidden = !isCurrent
@@ -36,6 +69,13 @@ class TabCollectionCell: UICollectionViewCell {
         }
     }
 
+    @IBOutlet fileprivate weak var tabSubItem: UIView!
+    @IBOutlet fileprivate weak var subItemIcon: UIImageView!
+    @IBOutlet fileprivate weak var subItemTitle: UILabel!
+    @IBOutlet fileprivate weak var subItemHeight: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var titleCenterY: NSLayoutConstraint!
+    
+    
     @IBOutlet fileprivate weak var itemLabel: UILabel!
     @IBOutlet fileprivate weak var currentBarView: UIView!
     @IBOutlet fileprivate weak var currentBarViewHeightConstraint: NSLayoutConstraint!
@@ -47,7 +87,7 @@ class TabCollectionCell: UICollectionViewCell {
     }
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        if item.characters.count == 0 {
+        if item.count == 0 {
             return CGSize.zero
         }
 
@@ -85,12 +125,12 @@ extension TabCollectionCell {
 
     func highlightTitle() {
         itemLabel.textColor = option.currentColor
-        itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
+        //itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
     }
 
     func unHighlightTitle() {
         itemLabel.textColor = option.defaultColor
-        itemLabel.font = UIFont.systemFont(ofSize: option.fontSize)
+        //itemLabel.font = UIFont.systemFont(ofSize: option.fontSize)
     }
 }
 

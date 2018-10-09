@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Effra_Std_Rg.ttf">
+            <string>Effra-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabCollectionCell" id="Njo-bq-MVA" customClass="TabCollectionCell" customModule="TabPageViewController" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabCollectionCell" id="Njo-bq-MVA" customClass="TabCollectionCell" customModule="FZBooking" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="151" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -19,12 +25,46 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-4f-Lz7">
-                        <rect key="frame" x="59" y="17" width="33" height="16"/>
+                        <rect key="frame" x="59.5" y="6.5" width="33" height="17"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="14"/>
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNT-Ho-J0G">
+                        <rect key="frame" x="35" y="26.5" width="80" height="15"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConfirmAlert" translatesAutoresizingMaskIntoConstraints="NO" id="ix1-0G-fcG">
+                                <rect key="frame" x="3" y="1" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ix1-0G-fcG" secondAttribute="height" multiplier="1:1" id="tOb-OI-Uyy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0e-2g-Imj">
+                                <rect key="frame" x="19" y="1" width="58" height="13"/>
+                                <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="12"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.12860733269999999" blue="0.22771814470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90980392160000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y0e-2g-Imj" firstAttribute="leading" secondItem="ix1-0G-fcG" secondAttribute="trailing" constant="3" id="1jX-qk-v5k"/>
+                            <constraint firstItem="y0e-2g-Imj" firstAttribute="top" secondItem="MNT-Ho-J0G" secondAttribute="top" constant="1" id="9va-DB-Pmx"/>
+                            <constraint firstAttribute="bottom" secondItem="y0e-2g-Imj" secondAttribute="bottom" constant="1" id="F4n-Ep-sAo"/>
+                            <constraint firstAttribute="height" constant="15" id="HaD-cT-Dk4"/>
+                            <constraint firstAttribute="trailing" secondItem="y0e-2g-Imj" secondAttribute="trailing" constant="3" id="W8e-H5-pur"/>
+                            <constraint firstItem="ix1-0G-fcG" firstAttribute="top" secondItem="MNT-Ho-J0G" secondAttribute="top" constant="1" id="ap4-Yz-YTk"/>
+                            <constraint firstAttribute="width" constant="80" id="cGM-qY-qwm"/>
+                            <constraint firstItem="ix1-0G-fcG" firstAttribute="leading" secondItem="MNT-Ho-J0G" secondAttribute="leading" constant="3" id="dIL-8T-qD0"/>
+                            <constraint firstAttribute="bottom" secondItem="ix1-0G-fcG" secondAttribute="bottom" constant="1" id="jg0-Iq-KC7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-AL-NbW">
                         <rect key="frame" x="0.0" y="0.0" width="151" height="48"/>
                         <connections>
@@ -44,13 +84,14 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="UkM-Ly-JBr" secondAttribute="trailing" id="03P-6M-I10"/>
                 <constraint firstItem="UkM-Ly-JBr" firstAttribute="leading" secondItem="Njo-bq-MVA" secondAttribute="leading" id="3Yw-nT-8nS"/>
+                <constraint firstItem="MNT-Ho-J0G" firstAttribute="top" secondItem="IWJ-4f-Lz7" secondAttribute="bottom" constant="3" id="6pc-am-KWJ"/>
                 <constraint firstItem="Sgu-AL-NbW" firstAttribute="leading" secondItem="Njo-bq-MVA" secondAttribute="leading" priority="750" id="8A5-j1-wap"/>
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerX" secondItem="Njo-bq-MVA" secondAttribute="centerX" id="FgI-gv-iu2"/>
                 <constraint firstItem="Sgu-AL-NbW" firstAttribute="top" secondItem="Njo-bq-MVA" secondAttribute="top" priority="750" id="IJz-mm-YfC"/>
                 <constraint firstAttribute="bottom" secondItem="UkM-Ly-JBr" secondAttribute="bottom" id="J0J-D8-GeH"/>
-                <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerY" secondItem="Njo-bq-MVA" secondAttribute="centerY" id="Um2-ZX-MDO"/>
-                <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerY" secondItem="Njo-bq-MVA" secondAttribute="centerY" id="YZv-VV-EQn"/>
+                <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerY" secondItem="Njo-bq-MVA" secondAttribute="centerY" constant="-10" id="Um2-ZX-MDO"/>
                 <constraint firstAttribute="trailing" secondItem="Sgu-AL-NbW" secondAttribute="trailing" priority="750" id="mA5-Ef-SrJ"/>
+                <constraint firstItem="MNT-Ho-J0G" firstAttribute="centerX" secondItem="Njo-bq-MVA" secondAttribute="centerX" id="peL-DT-6c3"/>
                 <constraint firstItem="UkM-Ly-JBr" firstAttribute="top" secondItem="Sgu-AL-NbW" secondAttribute="bottom" priority="750" id="qYV-Rl-all"/>
             </constraints>
             <size key="customSize" width="151" height="50"/>
@@ -58,8 +99,16 @@
                 <outlet property="currentBarView" destination="UkM-Ly-JBr" id="YSM-Pt-X2a"/>
                 <outlet property="currentBarViewHeightConstraint" destination="5V3-an-ChN" id="uAf-Fp-c3f"/>
                 <outlet property="itemLabel" destination="IWJ-4f-Lz7" id="CDS-2J-ZMm"/>
+                <outlet property="subItemHeight" destination="HaD-cT-Dk4" id="CaS-AZ-wgi"/>
+                <outlet property="subItemIcon" destination="ix1-0G-fcG" id="Tc6-Le-x36"/>
+                <outlet property="subItemTitle" destination="y0e-2g-Imj" id="OaI-5G-XqO"/>
+                <outlet property="tabSubItem" destination="MNT-Ho-J0G" id="YUd-oX-gCX"/>
+                <outlet property="titleCenterY" destination="Um2-ZX-MDO" id="FsJ-em-NtI"/>
             </connections>
             <point key="canvasLocation" x="145.5" y="273"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="ConfirmAlert" width="22" height="19"/>
+    </resources>
 </document>

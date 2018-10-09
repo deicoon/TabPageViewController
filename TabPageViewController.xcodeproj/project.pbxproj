@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2122B01E6E8AF300572DBD /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2122AA1E6E8AF300572DBD /* TabCollectionCell.swift */; };
-		4C2122B11E6E8AF300572DBD /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2122AC1E6E8AF300572DBD /* TabPageOption.swift */; };
-		4C2122B21E6E8AF300572DBD /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2122AE1E6E8AF300572DBD /* TabView.swift */; };
 		4C2122F61E6E9A9000572DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2122E81E6E8FB100572DBD /* AppDelegate.swift */; };
 		4C2122F71E6E9A9500572DBD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2122E41E6E8FA500572DBD /* ListViewController.swift */; };
 		4C2122F81E6E9A9500572DBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2122E51E6E8FA500572DBD /* ViewController.swift */; };
 		4C2122F91E6E9AA800572DBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2122F41E6E93DF00572DBD /* LaunchScreen.xib */; };
 		4C2122FA1E6E9AAE00572DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2122EC1E6E8FC300572DBD /* Main.storyboard */; };
-		4C2122FE1E6EA1FB00572DBD /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2122AB1E6E8AF300572DBD /* TabCollectionCell.xib */; };
-		4C2123001E6EA1FB00572DBD /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2122AF1E6E8AF300572DBD /* TabView.xib */; };
 		4C4753CA1E7159C600D9DD5C /* TabPageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TabPageViewController.framework */; };
 		4C4753CB1E7159C600D9DD5C /* TabPageViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TabPageViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F082FDB8216CFD600056A4A7 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F082FDB2216CFD600056A4A7 /* TabCollectionCell.xib */; };
+		F082FDB9216CFD600056A4A7 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB3216CFD600056A4A7 /* TabPageOption.swift */; };
+		F082FDBA216CFD610056A4A7 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB4216CFD600056A4A7 /* TabCollectionCell.swift */; };
+		F082FDBB216CFD610056A4A7 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F082FDB5216CFD600056A4A7 /* TabView.xib */; };
+		F082FDBC216CFD610056A4A7 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB6216CFD600056A4A7 /* TabView.swift */; };
+		F082FDBD216CFD610056A4A7 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082FDB7216CFD600056A4A7 /* TabPageViewController.swift */; };
 		F8CE39F71F35AE3A00CF74BA /* LimitedTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE39F61F35AE3A00CF74BA /* LimitedTabPageViewController.swift */; };
 		F8CE39F91F35AE6500CF74BA /* InfiniteTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE39F81F35AE6500CF74BA /* InfiniteTabPageViewController.swift */; };
-		OBJ_21 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* TabPageViewController.swift */; };
 		OBJ_28 /* TabPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* TabPageViewControllerTests.swift */; };
 		OBJ_30 /* TabPageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* TabPageViewController.framework */; };
 /* End PBXBuildFile section */
@@ -58,11 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4C2122AA1E6E8AF300572DBD /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
-		4C2122AB1E6E8AF300572DBD /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCollectionCell.xib; sourceTree = "<group>"; };
-		4C2122AC1E6E8AF300572DBD /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
-		4C2122AE1E6E8AF300572DBD /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
-		4C2122AF1E6E8AF300572DBD /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
 		4C2122CF1E6E8E9700572DBD /* TabPageViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPageViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2122E31E6E8FA500572DBD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/TabPageViewControllerDemo/Info.plist; sourceTree = "<group>"; };
 		4C2122E41E6E8FA500572DBD /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = Demo/TabPageViewControllerDemo/ListViewController.swift; sourceTree = "<group>"; };
@@ -72,12 +67,17 @@
 		4C2122EE1E6E8FD300572DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo/TabPageViewControllerDemo/Assets.xcassets; sourceTree = "<group>"; };
 		4C2122F21E6E91FA00572DBD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2122F51E6E93DF00572DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Demo/TabPageViewControllerDemo/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F082FDB2216CFD600056A4A7 /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCollectionCell.xib; sourceTree = "<group>"; };
+		F082FDB3216CFD600056A4A7 /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
+		F082FDB4216CFD600056A4A7 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
+		F082FDB5216CFD600056A4A7 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
+		F082FDB6216CFD600056A4A7 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		F082FDB7216CFD600056A4A7 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		F8CE39F61F35AE3A00CF74BA /* LimitedTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LimitedTabPageViewController.swift; path = Demo/TabPageViewControllerDemo/LimitedTabPageViewController.swift; sourceTree = "<group>"; };
 		F8CE39F81F35AE6500CF74BA /* InfiniteTabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfiniteTabPageViewController.swift; path = Demo/TabPageViewControllerDemo/InfiniteTabPageViewController.swift; sourceTree = "<group>"; };
 		OBJ_12 /* TabPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageViewControllerTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* TabPageViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TabPageViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_15 /* TabPageViewControllerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = TabPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_9 /* TabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
+		OBJ_15 /* TabPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TabPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,12 +188,12 @@
 		OBJ_8 /* TabPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4C2122AA1E6E8AF300572DBD /* TabCollectionCell.swift */,
-				4C2122AB1E6E8AF300572DBD /* TabCollectionCell.xib */,
-				4C2122AC1E6E8AF300572DBD /* TabPageOption.swift */,
-				OBJ_9 /* TabPageViewController.swift */,
-				4C2122AE1E6E8AF300572DBD /* TabView.swift */,
-				4C2122AF1E6E8AF300572DBD /* TabView.xib */,
+				F082FDB4216CFD600056A4A7 /* TabCollectionCell.swift */,
+				F082FDB2216CFD600056A4A7 /* TabCollectionCell.xib */,
+				F082FDB3216CFD600056A4A7 /* TabPageOption.swift */,
+				F082FDB7216CFD600056A4A7 /* TabPageViewController.swift */,
+				F082FDB6216CFD600056A4A7 /* TabView.swift */,
+				F082FDB5216CFD600056A4A7 /* TabView.xib */,
 			);
 			name = TabPageViewController;
 			path = Sources;
@@ -266,10 +266,12 @@
 				TargetAttributes = {
 					4C2122CE1E6E8E9700572DBD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ZX4AV7HKD2;
+						DevelopmentTeam = 9B466HZZ89;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					OBJ_16 = {
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -308,8 +310,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2122FE1E6EA1FB00572DBD /* TabCollectionCell.xib in Resources */,
-				4C2123001E6EA1FB00572DBD /* TabView.xib in Resources */,
+				F082FDBB216CFD610056A4A7 /* TabView.xib in Resources */,
+				F082FDB8216CFD600056A4A7 /* TabCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,10 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				4C2122B11E6E8AF300572DBD /* TabPageOption.swift in Sources */,
-				OBJ_21 /* TabPageViewController.swift in Sources */,
-				4C2122B21E6E8AF300572DBD /* TabView.swift in Sources */,
-				4C2122B01E6E8AF300572DBD /* TabCollectionCell.swift in Sources */,
+				F082FDB9216CFD600056A4A7 /* TabPageOption.swift in Sources */,
+				F082FDBD216CFD610056A4A7 /* TabPageViewController.swift in Sources */,
+				F082FDBC216CFD610056A4A7 /* TabView.swift in Sources */,
+				F082FDBA216CFD610056A4A7 /* TabCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +408,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZX4AV7HKD2;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B466HZZ89;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -425,10 +428,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.vasily.TabPageViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.vasily.TabPageViewControllerDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -456,7 +461,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZX4AV7HKD2;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B466HZZ89;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -471,18 +477,22 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.vasily.TabPageViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.vasily.TabPageViewControllerDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		OBJ_18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -498,6 +508,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TabPageViewController;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = TabPageViewController;
 			};
 			name = Debug;
@@ -505,8 +518,10 @@
 		OBJ_19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -522,6 +537,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TabPageViewController;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = TabPageViewController;
 			};
 			name = Release;
@@ -529,6 +546,7 @@
 		OBJ_25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,6 +564,7 @@
 		OBJ_26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
