@@ -397,12 +397,12 @@ extension TabPageViewController: UIPageViewControllerDelegate {
         if let currentIndex = currentIndex ,option.enabledIndexes != nil ,currentIndex >= option.minIndex, currentIndex < option.enabledIndexes! {
             tabView.updateCurrentIndex(currentIndex, shouldScroll: false)
             beforeIndex = currentIndex
-            tabDelegate?.didMoveToPage(controller: self.tabItems[currentIndex].viewController, index: currentIndex)
+            self.tabDelegate?.didMoveToPage(controller: self.tabItems[currentIndex].viewController, index: currentIndex)
         }
         else if let currentIndex = currentIndex , currentIndex < tabItemsCount {
             tabView.updateCurrentIndex(currentIndex, shouldScroll: false)
             beforeIndex = currentIndex
-            tabDelegate?.didMoveToPage(controller: self.tabItems[currentIndex].viewController, index: currentIndex)
+            self.tabDelegate?.didMoveToPage(controller: self.tabItems[currentIndex].viewController, index: currentIndex)
         }
         
         
