@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol TabPageDelegate {
+open protocol TabPageDelegate {
     func didMoveToPage(controller: UIViewController, index: Int)
 }
 
