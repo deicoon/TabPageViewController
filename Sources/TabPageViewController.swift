@@ -402,6 +402,7 @@ extension TabPageViewController: UIPageViewControllerDelegate {
         else if let currentIndex = currentIndex , currentIndex < tabItemsCount {
             tabView.updateCurrentIndex(currentIndex, shouldScroll: false)
             beforeIndex = currentIndex
+            tabDelegate?.didMoveToPage(controller: self.tabItems[currentIndex].viewController, index: currentIndex)xf
         }
         
         
