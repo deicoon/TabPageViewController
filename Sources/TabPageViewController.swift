@@ -154,7 +154,7 @@ public extension TabPageViewController {
 
 extension TabPageViewController {
 
-    func setupPageViewController() {
+    public func setupPageViewController() {
         dataSource = self
         delegate = self
         automaticallyAdjustsScrollViewInsets = false
