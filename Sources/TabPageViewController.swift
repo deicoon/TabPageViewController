@@ -17,15 +17,15 @@ open class TabPageViewController: UIPageViewController {
     open var option: TabPageOption = TabPageOption()
     open var tabItems: [(viewController: UIViewController, title: String,subTitle : String )] = []
  
-    var tabDelegate : TabPageDelegate?
+    open var tabDelegate : TabPageDelegate?
     
-    var currentIndex: Int? {
+    open var currentIndex: Int? {
         guard let viewController = viewControllers?.first else {
             return nil
         }
         return tabItems.map{ $0.viewController }.index(of: viewController)
     }
-    var beforeIndex: Int = 0
+    open var beforeIndex: Int = 0
     fileprivate var tabItemsCount: Int {
         return tabItems.count
     }
