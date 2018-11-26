@@ -362,7 +362,15 @@ extension TabPageViewController: UIPageViewControllerDataSource {
                 index = 0
             }
         }
-        if option.enabledIndexes != nil && index >= option.minIndex && index < option.enabledIndexes! {
+        if option.enabledIndexes != nil{
+            if index >= option.minIndex && index < option.enabledIndexes! {
+                return tabItems[index].viewController
+            }
+            else{
+                return  nil
+            }
+        }
+        else if index >= 0 && index < tabItems.count {
             return tabItems[index].viewController
         }
         return nil
