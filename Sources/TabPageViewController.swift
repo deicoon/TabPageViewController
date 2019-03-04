@@ -32,6 +32,8 @@ open class TabPageViewController: UIPageViewController {
     fileprivate var statusViewHeightConstraint: NSLayoutConstraint?
     fileprivate var tabBarTopConstraint: NSLayoutConstraint?
 
+    public var direction: UIPageViewController.NavigationDirection?
+	
     public init() {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
@@ -43,7 +45,7 @@ open class TabPageViewController: UIPageViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        setupPageViewController()
+        setupPageViewController(direction: direction)
         setupScrollView()
     }
 
@@ -106,7 +108,7 @@ public extension TabPageViewController {
 
 extension TabPageViewController {
 
-    fileprivate func setupPageViewController() {
+    fileprivate func setupPageViewController(direction: UIPageViewController.NavigationDirection? = .forward) {
         dataSource = self
         delegate = self
         automaticallyAdjustsScrollViewInsets = false
@@ -129,13 +131,13 @@ extension TabPageViewController {
      Update NavigationBar
      */
 
-    fileprivate func updateNavigationBar() {
-        if let navigationBar = navigationController?.navigationBar {
-            navigationBar.shadowImage = UIImage()
-            navigationBar.setBackgroundImage(option.tabBackgroundImage, for: .default)
-            navigationBar.isTranslucent = option.isTranslucent
-        }
-    }
+//    fileprivate func updateNavigationBar() {
+//        if let navigationBar = navigationController?.navigationBar {
+//            navigationBar.shadowImage = UIImage()
+//            navigationBar.setBackgroundImage(option.tabBackgroundImage, for: .default)
+//            navigationBar.isTranslucent = option.isTranslucent
+//        }
+//    }
 
     fileprivate func configuredTabView() -> TabView {
         let tabView = TabView(isInfinity: isInfinity, option: option)
