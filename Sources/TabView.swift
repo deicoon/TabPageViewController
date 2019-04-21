@@ -249,15 +249,9 @@ extension TabView {
             moveCurrentBarView(indexPath, animated: true, shouldScroll: true)
         }else{
             deselectVisibleCells()
-            
-            if isInfinity && (index < pageTabItemsCount) || (index >= pageTabItemsCount * 2) {
-                currentIndex = (index < pageTabItemsCount) ? index + pageTabItemsCount : index - pageTabItemsCount
-                shouldScrollToItem = true
-            } else {
-                currentIndex = index
-            }
-            let indexPath = IndexPath(item: index, section: 0)
+            var indexPath = IndexPath(item: currentIndex, section: 0)
             moveCurrentBarView(indexPath, animated: true, shouldScroll: true)
+            return
         }
     }
     
