@@ -200,7 +200,7 @@ extension TabPageViewController {
         view.addSubview(tabView)
 
         let top = NSLayoutConstraint(item: tabView,
-                                     attribute: .top,
+                                     attribute: .topMargin,
                                      relatedBy: .equal,
                                      toItem: topLayoutGuide,
                                      attribute: .bottom,
