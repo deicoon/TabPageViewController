@@ -246,10 +246,10 @@ extension TabPageViewController {
         view.addSubview(statusView)
 
         let top = NSLayoutConstraint(item: statusView,
-                                     attribute: .top,
+                                     attribute: .topMargin,
                                      relatedBy: .equal,
                                      toItem: view,
-                                     attribute: .top,
+                                     attribute: .topMargin,
                                      multiplier:1.0,
                                      constant: 0.0)
 
