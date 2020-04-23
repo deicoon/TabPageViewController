@@ -29,6 +29,7 @@ public struct TabPageOption {
     public var tabWidth: CGFloat?
     public var currentBarHeight: CGFloat = 2.0
     public var currentBarPadding: CGFloat = 0
+    public var navigationBarColor: UIColor = .white
     public var tabBackgroundColor: UIColor = .white
     public var pageBackgoundColor: UIColor = UIColor.white
     public var isTranslucent: Bool = true
@@ -37,15 +38,22 @@ public struct TabPageOption {
     internal var tabBarAlpha: CGFloat {
         return isTranslucent ? 0.95 : 1.0
     }
+    internal var navBarAlpha: CGFloat {
+        return isTranslucent ? 0.95 : 1.0
+    }
     internal var tabBackgroundImage: UIImage {
-        return convertImage()
+        return convertImage(color: tabBackgroundColor)
+    }
+    
+    internal var navigationBarImage: UIImage {
+        return convertImage(color: navigationBarColor)
     }
 
-    fileprivate func convertImage() -> UIImage {
+    fileprivate func convertImage(color : UIColor) -> UIImage {
         let rect : CGRect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
         let context : CGContext? = UIGraphicsGetCurrentContext()
-        let backgroundColor = tabBackgroundColor.withAlphaComponent(tabBarAlpha).cgColor
+        let backgroundColor = color.withAlphaComponent(tabBarAlpha).cgColor
         context?.setFillColor(backgroundColor)
         context?.fill(rect)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!

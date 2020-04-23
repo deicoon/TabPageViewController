@@ -180,7 +180,7 @@ extension TabPageViewController {
     fileprivate func updateNavigationBar() {
         if let navigationBar = navigationController?.navigationBar {
             navigationBar.shadowImage = UIImage()
-            navigationBar.setBackgroundImage(option.tabBackgroundImage, for: .default)
+            navigationBar.setBackgroundImage(option.navigationBarImage, for: .default)
             navigationBar.isTranslucent = option.isTranslucent
         }
     }
